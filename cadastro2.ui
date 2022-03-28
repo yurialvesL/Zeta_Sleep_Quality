@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>550</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>550</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ZSQ - Cadastro 2</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../Zeta_Sleep_Quality/Zeta_Sleep_Quality/imagens/sleep.ico</normaloff>../../Zeta_Sleep_Quality/Zeta_Sleep_Quality/imagens/sleep.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>De 0 a 10 quanto stress você passa:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Quantidade de xicaras de café tomadas por dia:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>Quantidade de dias que se exercita por semana:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>Você usa drogas ilícitas?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>Informe sua idade:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1" colspan="2">
+     <widget class="QSpinBox" name="spinXicarasCafe"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Quantas horas você dorme por dia:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1" colspan="2">
+     <widget class="QSpinBox" name="spinExerciciosSemana"/>
+    </item>
+    <item row="4" column="1" colspan="2">
+     <widget class="QSpinBox" name="spinNivelStress"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QRadioButton" name="DrogaIlicita_SIM">
+      <property name="text">
+       <string>Sim</string>
+      </property>
+      <property name="autoRepeat">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QSpinBox" name="spinIdade"/>
+    </item>
+    <item row="13" column="0">
+     <widget class="QRadioButton" name="Sexo_sim">
+      <property name="text">
+       <string>Masculino</string>
+      </property>
+      <property name="autoRepeat">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="0">
+     <widget class="QRadioButton" name="Sexo_Feminino">
+      <property name="text">
+       <string>Feminino</string>
+      </property>
+      <property name="autoRepeat">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QSpinBox" name="spinHorasDormidas"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QRadioButton" name="DrogaIlicitaNAO">
+      <property name="text">
+       <string>Não</string>
+      </property>
+      <property name="autoRepeat">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="10" column="0">
+     <widget class="QRadioButton" name="Sono_AgitadoSim">
+      <property name="text">
+       <string>Sim</string>
+      </property>
+      <property name="autoRepeat">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QRadioButton" name="SonoAgitadoNao">
+      <property name="text">
+       <string>Não</string>
+      </property>
+      <property name="autoRepeat">
+       <bool>true</bool>
+      </property>
+      <property name="autoExclusive">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="text">
+       <string>Seu sono é agitado?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="12" column="0">
+     <widget class="QLabel" name="label_8">
+      <property name="text">
+       <string>Qual o seu Sexo?</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="0" rowspan="2" colspan="3">
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>Avançar</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Tela_Logado</class>
+ <widget class="QMainWindow" name="Tela_Logado">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>750</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>750</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>750</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ZSQ - Área do Usuário</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>../../../../Downloads/Icone-_1_.ico</normaloff>../../../../Downloads/Icone-_1_.ico</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+#btn_naoSolution{
+	
+border-radius:15px;
+	
+	background-color: rgb(94, 197, 230);
+	
+	border-style:solid;
+
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+
+}
+
+#btn_simSolution{
+	
+	
+	border:none;
+	background-color: rgb(94, 197, 230);
+	border-radius:15px;
+	border-style:solid;
+
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+
+}
+
+#Btn_editar{
+	border-radius:15px;
+	
+	background-color: rgb(94, 197, 230);
+	
+	border-style:solid;
+
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+
+}
+
+#frame{
+
+	border-radius:10px;
+	
+	background-color:rgb(0, 85, 170);
+
+
+}
+
+
+#Tela_Logado{
+
+background-image:url(C:/Users/Yuri/source/repos/ZSQ/ZSQ/imagens/ceu.png)
+
+
+
+}
+
+#Btn_deslogar{
+	border-radius:15px;
+	border:none;
+	background-color: rgb(94, 197, 230);
+	
+	border-style:solid;
+
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="TextArea_info">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>112</y>
+      <width>256</width>
+      <height>231</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(34, 150, 213);
+border-style:solid;
+border-radius:15px;
+color:white;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>360</y>
+      <width>261</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>A solução está funcionando?</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="cb_listaSolucao">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>110</y>
+      <width>161</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(34, 150, 213);
+border-style:solid;
+border-radius:15px;
+color:white;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_editar">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>390</y>
+      <width>131</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:15px;
+	
+
+	
+	border-style:solid;
+
+	font-weight:bold;
+	color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Editar</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>50</y>
+      <width>631</width>
+      <height>401</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="lbl_solucaoESCOLHIDA">
+     <property name="geometry">
+      <rect>
+       <x>360</x>
+       <y>90</y>
+       <width>241</width>
+       <height>221</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="text">
+      <string>                                                                          \
+		                     \
+                                                                          \
+                                                                           \                                      </string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+     <property name="margin">
+      <number>0</number>
+     </property>
+     <property name="indent">
+      <number>0</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="lbl_nomeUsuario">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>30</y>
+       <width>151</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);</string>
+     </property>
+     <property name="text">
+      <string>Nome do usuário</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_simSolution">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>400</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Sim</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout"/>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="formLayout"/>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>2</width>
+      <height>2</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2"/>
+   </widget>
+   <widget class="QPushButton" name="btn_naoSolution">
+    <property name="geometry">
+     <rect>
+      <x>244</x>
+      <y>400</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Não</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Btn_deslogar">
+    <property name="geometry">
+     <rect>
+      <x>554</x>
+      <y>460</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:15px;</string>
+    </property>
+    <property name="text">
+     <string>Deslogar</string>
+    </property>
+   </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>frame</zorder>
+   <zorder>TextArea_info</zorder>
+   <zorder>label_2</zorder>
+   <zorder>cb_listaSolucao</zorder>
+   <zorder>Btn_editar</zorder>
+   <zorder>layoutWidget</zorder>
+   <zorder>btn_simSolution</zorder>
+   <zorder>btn_naoSolution</zorder>
+   <zorder>Btn_deslogar</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

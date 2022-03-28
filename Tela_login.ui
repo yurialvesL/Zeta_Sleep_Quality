@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ZSQ_login</class>
+ <widget class="QMainWindow" name="ZSQ_login">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>342</width>
+    <height>378</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>342</width>
+    <height>378</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>342</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <family>Arial</family>
+    <pointsize>12</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>ZSQ - Login</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icone (1).png</normaloff>icone (1).png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ZSQ_login{
+background-image:url(C:/Users/Yuri/source/repos/ZSQ/ZSQ/imagens/estrela3.png);
+transform: scaleX(-1);
+
+}
+
+#txtlogo{
+background-repeat:no-repeat;
+background-size: auto;
+background-image:url(C:/Users/Yuri/source/repos/ZSQ/ZSQ/imagens/logo_1.png);
+
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>126</x>
+      <y>300</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_login">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>280</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:15px;
+	
+	background-color: rgb(94, 197, 230);
+	
+	border-style:solid;
+
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Logar</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_cadastro">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>280</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-radius:15px;
+	
+	background-color: rgb(94, 197, 230);
+	
+	border-style:solid;
+
+	font-weight:bold;
+	color: rgb(255, 255, 255);
+</string>
+    </property>
+    <property name="text">
+     <string>Cadastre-se</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-10</x>
+      <y>0</y>
+      <width>291</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> background-color:#0055aa;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="txtlogo">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>20</y>
+       <width>300</width>
+       <height>110</height>
+      </rect>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>300</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>300</width>
+       <height>110</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLineEdit" name="usuarioCPF">
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>158</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(34, 150, 213);
+border:none;
+color:white;</string>
+    </property>
+    <property name="inputMask">
+     <string>000.000.000-00</string>
+    </property>
+    <property name="maxLength">
+     <number>14</number>
+    </property>
+    <property name="frame">
+     <bool>true</bool>
+    </property>
+    <property name="cursorPosition">
+     <number>0</number>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_usuario">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>130</y>
+      <width>60</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Usuário</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lbl_senha">
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>200</y>
+      <width>49</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>Senha</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="senhaUsuario">
+    <property name="geometry">
+     <rect>
+      <x>57</x>
+      <y>230</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(34, 150, 213);
+border:none;
+color:white;
+</string>
+    </property>
+    <property name="inputMask">
+     <string extracomment="*"/>
+    </property>
+    <property name="maxLength">
+     <number>32767</number>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <zorder>frame</zorder>
+   <zorder>label_3</zorder>
+   <zorder>btn_login</zorder>
+   <zorder>btn_cadastro</zorder>
+   <zorder>usuarioCPF</zorder>
+   <zorder>lbl_usuario</zorder>
+   <zorder>lbl_senha</zorder>
+   <zorder>senhaUsuario</zorder>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
